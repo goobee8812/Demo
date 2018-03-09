@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/id_fragment_ly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/id_line_view">
+    </FrameLayout>
+    <View
+        android:id="@+id/id_line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#bfbfbf"
+        android:layout_above="@+id/id_ly"
+        >
+    </View>
+    <LinearLayout
+        android:id="@+id/id_ly"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/id_home_im"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/home_unselected"
+            android:scaleType="centerInside"/>
+
+        <ImageView
+            android:id="@+id/id_order_im"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/order_unselected"
+            android:scaleType="centerInside"/>
+
+        <ImageView
+            android:id="@+id/id_service_im"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/service_unselected"
+            android:scaleType="centerInside"/>
+
+        <ImageView
+            android:id="@+id/id_mine_im"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/mine_unselected"
+            android:scaleType="centerInside"/>
+    </LinearLayout>
+
+</RelativeLayout>

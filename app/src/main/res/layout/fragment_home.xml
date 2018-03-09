@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:id="@+id/relativeLayout">
+        <ImageView
+            android:id="@+id/id_home_scan"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/scan"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:scaleType="centerInside"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="首页"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/id_home_msg"
+            android:layout_toRightOf="@+id/id_home_scan"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"/>
+        <ImageView
+            android:id="@+id/id_home_msg"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/imessage"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/id_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffff"
+        android:layout_below="@+id/relativeLayout"/>
+
+</RelativeLayout>
